@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="Механическая клавиатура">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b3140"/>
+      <stop offset="1" stop-color="#171a23"/>
+    </linearGradient>
+    <pattern id="keys" width="34" height="34" patternUnits="userSpaceOnUse">
+      <rect x="2" y="2" width="30" height="30" rx="5" fill="#eceff4"/>
+      <rect x="2" y="2" width="30" height="22" rx="5" fill="#ffffff" opacity="0.6"/>
+    </pattern>
+  </defs>
+  <rect x="10" y="30" width="380" height="190" rx="18" fill="url(#body)"/>
+  <rect x="26" y="46" width="340" height="102" fill="url(#keys)"/>
+  <rect x="28" y="150" width="62" height="30" rx="5" fill="#eceff4"/>
+  <rect x="94" y="150" width="170" height="30" rx="5" fill="#eceff4"/>
+  <rect x="268" y="150" width="30" height="30" rx="5" fill="#c2410c"/>
+  <rect x="302" y="150" width="30" height="30" rx="5" fill="#c2410c"/>
+  <rect x="336" y="150" width="30" height="30" rx="5" fill="#c2410c"/>
+  <rect x="26" y="196" width="340" height="6" rx="3" fill="#c2410c" opacity="0.8"/>
+</svg>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Контакты — KeyForge</title>
+    <meta name="description" content="Адрес, телефон, e-mail и время работы магазина KeyForge.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <header class="site-header" id="top">
+        <div class="site-header__inner">
+            <a class="site-header__logo" href="index.html">KeyForge</a>
+            <nav class="site-nav" aria-label="Основное меню">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="contacts.html"
+                            aria-current="page">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page" id="main">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+                <li class="breadcrumbs__item" aria-current="page">Контакты</li>
+            </ol>
+        </nav>
+
+        <h1 class="section__title">Контакты</h1>
+
+        <section class="section" aria-labelledby="contacts-info-title">
+            <h2 class="visually-hidden" id="contacts-info-title">Контактная информация</h2>
+            <div class="contacts">
+                <article class="contact-card">
+                    <h3 class="contact-card__title">Адрес</h3>
+                    <address class="contact-card__text">г. Москва, ул. Примерная, д. 1, офис 5</address>
+                </article>
+                <article class="contact-card">
+                    <h3 class="contact-card__title">Телефон</h3>
+                    <p class="contact-card__text"><a href="tel:+79000000000">+7 (900) 000-00-00</a></p>
+                </article>
+                <article class="contact-card">
+                    <h3 class="contact-card__title">E-mail</h3>
+                    <p class="contact-card__text"><a href="mailto:hello@keyforge.example">hello@keyforge.example</a></p>
+                </article>
+                <article class="contact-card">
+                    <h3 class="contact-card__title">Время работы</h3>
+                    <p class="contact-card__text">Пн–Пт: 10:00–19:00<br>Сб: 11:00–16:00<br>Вс: выходной</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="contacts-cta-title">
+            <div class="callout">
+                <div class="callout__content">
+                    <h2 class="callout__title" id="contacts-cta-title">Написать нам</h2>
+                    <p class="callout__text">Быстрее всего ответим на заявку, заполните форму на отдельной странице.</p>
+                </div>
+                <div class="callout__actions">
+                    <a class="button" href="order.html">Перейти к форме заявки</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <p class="site-footer__copy">© 2026 KeyForge. Учебный проект, КР №1.</p>
+            <ul class="site-footer__links">
+                <li><a class="site-footer__link" href="index.html#advantages">Преимущества</a></li>
+                <li><a class="site-footer__link" href="index.html#popular">Популярные товары</a></li>
+                <li><a class="site-footer__link" href="index.html#reviews">Отзывы</a></li>
+                <li><a class="site-footer__link" href="index.html#faq">FAQ</a></li>
+                <li><a class="site-footer__link" href="index.html#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <a class="to-top" href="#top">Наверх</a>
+</body>
+
+</html>
