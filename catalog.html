@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Каталог — KeyForge</title>
+    <meta name="description" content="Каталог механических клавиатур и аксессуаров KeyForge.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <header class="site-header" id="top">
+        <div class="site-header__inner">
+            <a class="site-header__logo" href="index.html">KeyForge</a>
+            <nav class="site-nav" aria-label="Основное меню">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html"
+                            aria-current="page">Каталог</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page" id="main">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+                <li class="breadcrumbs__item" aria-current="page">Каталог</li>
+            </ol>
+        </nav>
+
+        <h1 class="section__title">Каталог</h1>
+
+        <ul class="chips">
+            <li><a class="chips__link chips__link--active" href="catalog.html">Все</a></li>
+            <li><a class="chips__link" href="catalog.html">Полноразмерные</a></li>
+            <li><a class="chips__link" href="catalog.html">TKL</a></li>
+            <li><a class="chips__link" href="catalog.html">Компактные</a></li>
+            <li><a class="chips__link" href="catalog.html">Аксессуары</a></li>
+        </ul>
+
+        <div class="catalog">
+            <aside class="filters catalog__filters" aria-label="Фильтры">
+                <form class="filters__form">
+                    <h2 class="filters__title">Фильтры</h2>
+
+                    <fieldset class="filters__group">
+                        <legend class="filters__legend">Категория</legend>
+                        <label class="filters__option"><input type="checkbox" name="category" value="full">
+                            Полноразмерные</label>
+                        <label class="filters__option"><input type="checkbox" name="category" value="tkl"> TKL</label>
+                        <label class="filters__option"><input type="checkbox" name="category" value="compact">
+                            Компактные</label>
+                        <label class="filters__option"><input type="checkbox" name="category" value="accessories">
+                            Аксессуары</label>
+                    </fieldset>
+
+                    <fieldset class="filters__group">
+                        <legend class="filters__legend">Цена</legend>
+                        <label class="filters__option"><input type="radio" name="price" value="any" checked>
+                            Любая</label>
+                        <label class="filters__option"><input type="radio" name="price" value="low"> до 5 000 ₽</label>
+                        <label class="filters__option"><input type="radio" name="price" value="mid"> 5 000 – 9 000
+                            ₽</label>
+                        <label class="filters__option"><input type="radio" name="price" value="high"> от 9 000 ₽</label>
+                    </fieldset>
+
+                    <fieldset class="filters__group">
+                        <legend class="filters__legend">Подключение</legend>
+                        <label class="filters__option"><input type="checkbox" name="wireless" value="yes">
+                            Беспроводные</label>
+                    </fieldset>
+
+                    <div class="filters__actions">
+                        <button class="button" type="button" disabled>Применить</button>
+                        <button class="button button--secondary" type="reset">Сбросить</button>
+                    </div>
+                </form>
+            </aside>
+
+            <section class="catalog__content" aria-labelledby="catalog-list-title">
+                <div class="catalog__toolbar">
+                    <h2 class="catalog__count" id="catalog-list-title">Найдено: 6 товаров</h2>
+                    <button class="button button--secondary" type="button" data-modal-open="consult-modal">Помочь с
+                        выбором</button>
+                </div>
+
+                <div class="product-grid">
+                    <article class="product-card product-card--hit">
+                        <span class="badge badge--hit product-card__badge">Хит</span>
+                        <img class="product-card__image" src="images/keyboard.svg" alt="Клавиатура KeyForge K75 Pro"
+                            width="400" height="240">
+                        <div class="product-card__body">
+                            <h3 class="product-card__title">KeyForge K75 Pro</h3>
+                            <p class="product-card__description">Раскладка 75%, hot-swap, алюминиевый корпус.</p>
+                            <p class="product-card__price">8 990 ₽</p>
+                            <a class="button product-card__button" href="product.html">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <article class="product-card product-card--new">
+                        <span class="badge badge--new product-card__badge">Новинка</span>
+                        <img class="product-card__image" src="images/keyboard.svg" alt="Клавиатура KeyForge K65 Mini"
+                            width="400" height="240">
+                        <div class="product-card__body">
+                            <h3 class="product-card__title">KeyForge K65 Mini</h3>
+                            <p class="product-card__description">Раскладка 65%, подключение к трём устройствам.</p>
+                            <p class="product-card__price">6 490 ₽</p>
+                            <a class="button product-card__button" href="product.html">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <article class="product-card product-card--discount">
+                        <span class="badge badge--discount product-card__badge">Скидка</span>
+                        <img class="product-card__image" src="images/keyboard.svg" alt="Клавиатура KeyForge TKL Classic"
+                            width="400" height="240">
+                        <div class="product-card__body">
+                            <h3 class="product-card__title">KeyForge TKL Classic</h3>
+                            <p class="product-card__description">Классика без цифрового блока, PBT-кейкапы.</p>
+                            <p class="product-card__price"><s class="product-card__old-price">8 490 ₽</s> 7 290 ₽</p>
+                            <a class="button product-card__button" href="product.html">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img class="product-card__image" src="images/keyboard.svg" alt="Клавиатура KeyForge K100 Full"
+                            width="400" height="240">
+                        <div class="product-card__body">
+                            <h3 class="product-card__title">KeyForge K100 Full</h3>
+                            <p class="product-card__description">Полноразмерная раскладка, цифровой блок, регулятор
+                                громкости.</p>
+                            <p class="product-card__price">10 990 ₽</p>
+                            <a class="button product-card__button" href="product.html">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img class="product-card__image" src="images/keyboard.svg"
+                            alt="Цифровой блок KeyForge Numpad Lite" width="400" height="240">
+                        <div class="product-card__body">
+                            <h3 class="product-card__title">KeyForge Numpad Lite</h3>
+                            <p class="product-card__description">Отдельный цифровой блок для таблиц и бухгалтерии.</p>
+                            <p class="product-card__price">3 290 ₽</p>
+                            <a class="button product-card__button" href="product.html">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <article class="product-card product-card--hit">
+                        <span class="badge badge--hit product-card__badge">Хит</span>
+                        <img class="product-card__image" src="images/keyboard.svg" alt="Набор кейкапов PBT" width="400"
+                            height="240">
+                        <div class="product-card__body">
+                            <h3 class="product-card__title">Набор кейкапов PBT</h3>
+                            <p class="product-card__description">130 клавиш, профиль Cherry, устойчивы к залоснению.</p>
+                            <p class="product-card__price">2 490 ₽</p>
+                            <a class="button product-card__button" href="product.html">Подробнее</a>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="section__more"><a class="button" href="order.html">Оставить заявку</a></p>
+            </section>
+        </div>
+    </main>
+
+    <dialog class="modal" id="consult-modal" aria-labelledby="consult-title">
+        <div class="modal__content">
+            <h2 class="modal__title" id="consult-title">Поможем с выбором</h2>
+            <p class="modal__text">Оставьте контакты, и менеджер перезвонит вам.</p>
+            <form class="order-form order-form--plain" method="dialog">
+                <div class="order-form__field">
+                    <label class="order-form__label" for="modal-name">Имя</label>
+                    <input class="order-form__input" type="text" id="modal-name" name="name" autocomplete="name"
+                        required>
+                </div>
+                <div class="order-form__field">
+                    <label class="order-form__label" for="modal-phone">Телефон</label>
+                    <input class="order-form__input" type="tel" id="modal-phone" name="phone" autocomplete="tel"
+                        required>
+                </div>
+                <div class="order-form__field order-form__field--checkbox">
+                    <input type="checkbox" id="modal-consent" name="consent" required>
+                    <label class="order-form__label" for="modal-consent">Согласен на обработку персональных
+                        данных</label>
+                </div>
+                <div class="order-form__actions">
+                    <button class="button" type="submit">Перезвоните мне</button>
+                    <button class="button button--secondary" type="button" data-modal-close>Закрыть</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <p class="site-footer__copy">© 2026 KeyForge. Учебный проект, КР №1.</p>
+            <ul class="site-footer__links">
+                <li><a class="site-footer__link" href="index.html#advantages">Преимущества</a></li>
+                <li><a class="site-footer__link" href="index.html#popular">Популярные товары</a></li>
+                <li><a class="site-footer__link" href="index.html#reviews">Отзывы</a></li>
+                <li><a class="site-footer__link" href="index.html#faq">FAQ</a></li>
+                <li><a class="site-footer__link" href="index.html#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <a class="to-top" href="#top">Наверх</a>
+</body>
+
+</html>
