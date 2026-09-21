@@ -13,7 +13,7 @@
 
 ## Ссылка на опубликованный проект
 
-GitHub Pages: https://USERNAME.github.io/kr1-html-css-shop/
+GitHub Pages: https://assgeier.github.io/kr1-html-css-shop/
 
 ## Структура проекта
 
